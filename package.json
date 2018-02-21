@@ -1,0 +1,7 @@
+{
+  "name": "smaspi_sns",
+  "private": true,
+  "dependencies": {
+    "admin-lte": "^2.4.2"
+  }
+}
