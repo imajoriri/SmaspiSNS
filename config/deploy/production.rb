@@ -1,3 +1,14 @@
+set :app_eip, "52.198.65.234"
+
+role :app, "admin@#{fetch(:app_eip)}"
+role :web, "admin@#{fetch(:app_eip)}"
+role :db, "admin@#{fetch(:app_eip)}"
+
+set :ssh_options, {
+  keys: [File.expand_path('~/.ssh/SmaspiSns')],
+  forward_agent: true
+}
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.

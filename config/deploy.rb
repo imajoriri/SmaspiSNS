@@ -39,10 +39,10 @@ lock "~> 3.10.1"
 # set :ssh_options, verify_host_key: :secure
 
 
-set :repo_url, 'https://github.com/sample/SampleApp.git'
+set :repo_url, 'https://github.com/imajoriri/SmaspiSNS.git'
 
 # base
-set :application, 'RailsSampleApp'
+set :application, 'smaspi_sns'
 set :branch, 'master'
 set :user, 'admin'
 set :deploy_to, "/opt/#{fetch(:application)}"
