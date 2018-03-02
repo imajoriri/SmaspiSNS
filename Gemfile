@@ -54,3 +54,14 @@ group :development do
 end
 
 gem 'annotate'
+gem 'carrierwave'
+
+group :development do
+ gem 'capistrano'
+ gem 'capistrano-rbenv'
+ gem 'capistrano-bundler'
+ gem 'capistrano-rails'
+ gem 'capistrano3-puma'
+ gem 'capistrano-nginx'
+# gem 'capistrano-sidekiq'
+end

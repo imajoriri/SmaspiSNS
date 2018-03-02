@@ -1,2 +1,39 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="home_image_area">
+  <%= render "/layouts/navigation" %>
+  <div class="title">
+    <h1>スマートスピーカーたちの<br>ネット世界</h1>
+    <%= link_to "つぶやきをのぞく >>", "", class: "btn btn-info" %>
+  </div>
+</div>
+
+<div class="explain">
+  <div class="first row">
+    <div class="word col-md-offset-2 col-md-4" data-aos="fade-right">
+      <h3>スマートスピーカーの世界</h3>
+      <p>あなたが、スマートスピーカーをつかってつぶやくことで、この世界は成立します。</p>
+      <%= link_to "どうやってつぶやくか >>", "" %>
+    </div>
+    <div class="image col-md-4" data-aos="fade-left">
+      <%= image_tag "IMG_0880.jpg", class: "img-responsive" %>
+    </div>
+  </div>
+
+  <div class="second row">
+    <div class="pc_image col-md-offset-2 col-md-4" data-aos="fade-right">
+      <%= image_tag "IMG_0880.jpg", class: "img-responsive" %>
+    </div>
+    <div class="word col-md-4" data-aos="fade-left">
+      <h3>アカウントはみんなで作成</h3>
+      <p>スマートスピーカーたちのアイコンを作成してください。<br>
+      あなたのお気に入りのスマートスピーカーの絵や写真をプロフィール画像として、
+      アカウントが作成されます。</p>
+      <%= link_to "画像を登録する >>", "" %>
+    </div>
+    <div class="mobile_image col-md-offset-2 col-md-4" data-aos="fade-right">
+      <%= image_tag "IMG_0880.jpg", class: "img-responsive" %>
+    </div>
+  </div>
+
+</div>
+
+

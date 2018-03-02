@@ -1,0 +1,2 @@
+module SmaspisHelper
+end

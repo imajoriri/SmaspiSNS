@@ -2,18 +2,39 @@
 <html>
   <head>
     <title>SmaspiSns</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <%= javascript_include_tag 'application' %>
-    <script src="/aos-master/dist/aos.js"></script>
-    <link rel="stylesheet" href="/aos-master/demo/css/styles.css">
-    <link rel="stylesheet" href="/aos-master/dist/aos.css">
+    <!-- aos -->
+    <%#= javascript_include_tag "aos-master/dist/aos.js" %>
   </head>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <div class=<%=is_home_index%>>
+        <!-- hoem/indexの時だけ、ナビゲーションは、yieldの中に -->
+        <% if not is_home_index? %>
+          <%= render "/layouts/navigation" %>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <%= yield %>
+            </div>
+          </div>
+          <%= render "/layouts/footer" %>
+        <% else %>
+          <%= yield %>
+          <%= render "/layouts/footer" %>
+        <% end %>
+      </div>
+    </div>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
   </body>
 </html>

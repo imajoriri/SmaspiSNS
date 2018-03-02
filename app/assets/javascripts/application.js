@@ -15,4 +15,8 @@
 
 //= require jquery/dist/jquery.min.js
 //= require bootstrap/dist/js/bootstrap.min.js
+//= require bootstrap/dist/js/bootstrap.js
 //= require admin-lte/dist/js/adminlte.min.js
+//= require aos-master/dist/aos
+
+

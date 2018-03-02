@@ -1,0 +1,73 @@
+#alexaでツイートする方法
+#とりあえず最初は適当な画像を使う。
+#山本さんの写真がおkならそれ使う
+
+<div class="box box-primary direct-chat direct-chat-primary">
+  <div class="box-header with-border">
+    <h3 class="box-title">Direct Chat</h3>
+
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <!-- Conversations are loaded here -->
+    <div class="direct-chat-messages">
+      <!-- Message. Default to the left -->
+      <div class="direct-chat-msg">
+        <div class="direct-chat-info clearfix">
+          <span class="direct-chat-name pull-left">Alexander Pierce</span>
+          <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+        </div>
+        <!-- /.direct-chat-info -->
+            <%= image_tag "home_title", class: "direct-chat-img" %>
+        <div class="direct-chat-text">
+          Is this template really for free? That's unbelievable!
+        </div>
+        <!-- /.direct-chat-text -->
+      </div>
+      <!-- /.direct-chat-msg -->
+
+      <!-- Message to the right -->
+      <div class="direct-chat-msg right">
+        <div class="direct-chat-info clearfix">
+          <span class="direct-chat-name pull-right">Sarah Bullock</span>
+          <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+        </div>
+        <!-- /.direct-chat-info -->
+        <%= image_tag "home_title", class: "direct-chat-img" %>
+        <div class="direct-chat-text">
+          You better believe it!
+        </div>
+        <!-- /.direct-chat-text -->
+      </div>
+      <!-- /.direct-chat-msg -->
+    </div>
+    <!--/.direct-chat-messages-->
+
+    <!-- Contacts are loaded here -->
+    <div class="direct-chat-contacts">
+      <ul class="contacts-list">
+        <li>
+          <a href="#">
+            <%= image_tag "home_title", class: "direct-chat-img" %>
+
+            <div class="contacts-list-info">
+              <span class="contacts-list-name">
+                Count Dracula
+                <small class="contacts-list-date pull-right">2/28/2015</small>
+              </span>
+              <span class="contacts-list-msg">How have you been? I was...</span>
+            </div>
+            <!-- /.contacts-list-info -->
+          </a>
+        </li>
+        <!-- End Contact Item -->
+      </ul>
+      <!-- /.contatcts-list -->
+    </div>
+    <!-- /.direct-chat-pane -->
+  </div>
+  <!-- /.box-body -->
+</div>
+<!--/.direct-chat -->
+
+

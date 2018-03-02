@@ -1,3 +1,59 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//////////index
+.home_image_area .title{
+  text-align: center;
+  color: white;
+}
+//ナビゲーションの色を透明に。文字をみやすく
+.home_image_area .navbar-default{
+  background: rgba(255, 255, 255, 0);
+  border: none;
+}
+.home_image_area .navbar-default a{
+  color: white !important;
+}
+
+//home/indexでの背景画像
+body .home_index .home_image_area{
+  /* 画像ファイルの指定 */
+  background-image: url("IMG_0880.jpg");
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #464646;
+}
+body .home_index .home_image_area .title{
+  //タイトル画像の大きさ
+  padding: 200px 0px;
+}
+
+//pc画面
+@media (min-width: 992px){
+  .explain .first, .explain .second{
+    margin-top: 100px;
+  }
+
+  .explain .first .word, .explain .second .word{
+    margin-top: 50px;
+  }
+
+  .explain .second .mobile_image{
+    display: none;
+  }
+}
+
+//スマホ、タブレット
+@media (max-width: 992px){
+  .explain .second .pc_image{
+    display: none;
+  }
+}
