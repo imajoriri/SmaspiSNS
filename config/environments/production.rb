@@ -31,6 +31,7 @@ Rails.application.configure do
   #config.assets.compile = false
   config.assets.compile = true
   #config.assets.enabled = false
+  config.assets.digest = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
