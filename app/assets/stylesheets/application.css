@@ -14,12 +14,12 @@
  *= require_self
  */
 
-/*@import 'bootstrap/dist/css/bootstrap.min.css';
-@import 'font-awesome/css/font-awesome.min.css';
-@import 'admin-lte/dist/css/AdminLTE.min.css';
-@import 'admin-lte/dist/css/skins/skin-blue.min.css';
+@import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '/node_modules/font-awesome/css/font-awesome.min.css';
+@import '/node_modules/admin-lte/dist/css/AdminLTE.min.css';
+@import '/node_modules/admin-lte/dist/css/skins/skin-blue.min.css';
+/*@import "aos-master/dist/styles.css";*/
 @import "aos-master/dist/aos.css";
-@import "aos-master/dist/styles.css";*/
 
 body .container-fluid{
   padding: 0px !important;

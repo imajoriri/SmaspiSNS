@@ -55,6 +55,8 @@ end
 
 gem 'annotate'
 gem 'carrierwave'
+gem 'devise'
+gem 'rails_admin'
 
 group :development do
  gem 'capistrano'
