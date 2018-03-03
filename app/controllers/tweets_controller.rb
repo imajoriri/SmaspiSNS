@@ -13,4 +13,12 @@ class TweetsController < ApplicationController
     @tweet.save
   end 
 
+  def method
+    @left_name = "ユーザー"
+    @left_image_path = "/image/human.png"
+    @right_name = "Alexa"
+    @right_image_path = "home_title"
+
+  end 
+
 end

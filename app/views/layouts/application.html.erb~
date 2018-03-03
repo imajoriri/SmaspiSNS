@@ -6,7 +6,6 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <%= javascript_include_tag 'application' %>
     <!-- aos -->
     <%#= javascript_include_tag "aos-master/dist/aos.js" %>
@@ -17,12 +16,13 @@
     <%#= stylesheet_link_tag "/node_modules/admin-lte/dist/css/skins/skin-blue.min.css", media: "all" %>
     <%#= stylesheet_link_tag "/node_modules/aos-master/dist/aos.css", media: "all" %>
 
-
   </head>
   </head>
 
-  <body class="<%= params[:controller]+"_"+params[:action] %>_body">
+  <body>
     <div class="container-fluid">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <div class=<%=is_home_index%>>
         <!-- hoem/indexの時だけ、ナビゲーションは、yieldの中に -->
         <% if not is_home_index? %>
