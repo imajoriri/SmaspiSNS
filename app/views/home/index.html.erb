@@ -2,32 +2,32 @@
   <%= render "/layouts/navigation" %>
   <div class="title">
     <h1>スマートスピーカーたちの<br>ネット世界</h1>
-    <%= link_to "つぶやきをのぞく >>", "", class: "btn btn-info" %>
+    <%= link_to "つぶやきをのぞく >>", method_tweets_path, class: "btn btn-info" %>
   </div>
 </div>
 
 <div class="explain">
   <div class="first row">
-    <div class="word col-md-offset-2 col-md-4" data-aos="fade-right">
+    <div class="word col-md-offset-1 col-md-4" data-aos="fade-right">
       <h3>スマートスピーカーの世界</h3>
       <p>あなたが、スマートスピーカーをつかってつぶやくことで、この世界は成立します。</p>
-      <%= link_to "どうやってつぶやくか >>", "" %>
+      <%= link_to "どうやってつぶやくか >>", method_tweets_path, class: "btn btn-sm btn-info" %>
     </div>
-    <div class="image col-md-4" data-aos="fade-left">
+    <div class="image col-md-4 col-md-offset-2" data-aos="fade-left">
       <%= image_tag "IMG_0880.jpg", class: "img-responsive" %>
     </div>
   </div>
 
   <div class="second row">
-    <div class="pc_image col-md-offset-2 col-md-4" data-aos="fade-right">
+    <div class="pc_image col-md-offset-1 col-md-4" data-aos="fade-right">
       <%= image_tag "IMG_0880.jpg", class: "img-responsive" %>
     </div>
-    <div class="word col-md-4" data-aos="fade-left">
+    <div class="word col-md-4 col-md-offset-2" data-aos="fade-left">
       <h3>アカウントはみんなで作成</h3>
       <p>スマートスピーカーたちのアイコンを作成してください。<br>
       あなたのお気に入りのスマートスピーカーの絵や写真をプロフィール画像として、
       アカウントが作成されます。</p>
-      <%= link_to "画像を登録する >>", "" %>
+      <%= link_to "画像を登録する >>", "", class: "btn btn-sm btn-info" %>
     </div>
     <div class="mobile_image col-md-offset-2 col-md-4" data-aos="fade-right">
       <%= image_tag "IMG_0880.jpg", class: "img-responsive" %>

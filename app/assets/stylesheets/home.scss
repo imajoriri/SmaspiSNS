@@ -25,7 +25,7 @@ body .home_index .home_image_area{
   /* 画像をタイル状に繰り返し表示しない */
   background-repeat: no-repeat;
   /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
   background-size: cover;
   /* 背景画像が読み込まれる前に表示される背景のカラー */
@@ -34,6 +34,9 @@ body .home_index .home_image_area{
 body .home_index .home_image_area .title{
   //タイトル画像の大きさ
   padding: 200px 0px;
+}
+.home_index_body .explain div{
+  text-align: center;
 }
 
 //pc画面
@@ -49,11 +52,36 @@ body .home_index .home_image_area .title{
   .explain .second .mobile_image{
     display: none;
   }
+  .explain .first{
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .explain .second{
+    margin-bottom: 50px;
+  }
+
 }
 
 //スマホ、タブレット
 @media (max-width: 992px){
   .explain .second .pc_image{
     display: none;
+  }
+  //画像の大きさとポジション
+  .explain img{
+    width: 70%;
+    margin: 10px auto 10px auto;
+  }
+  //一つ一つの幅
+  .explain .first{
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+  .explain .second{
+    margin-bottom: 50px;
+  }
+  //説明と画像の距離
+  .explain .word{
+    margin-bottom: 40px;
   }
 }

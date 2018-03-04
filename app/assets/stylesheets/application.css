@@ -21,10 +21,46 @@
 /*@import "aos-master/dist/styles.css";*/
 @import "aos-master/dist/aos.css";
 
+/*右の余白削除*/
+body .wrapper{
+  width:100%;
+  overflow:hidden;
+}
+body{
+  background-color: #ebfaff !important;
+}
 body .container-fluid{
   padding: 0px !important;
 }
 
+/*navigation*/
 body .navbar{
   margin-bottom: 0px;
 }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/*////////////////////footer*/
+body .main-footer{
+  margin-top: 30px;
+  margin-left: 0px;
+  text-align: center;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+

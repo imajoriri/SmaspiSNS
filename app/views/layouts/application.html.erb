@@ -22,21 +22,23 @@
   </head>
 
   <body class="<%= params[:controller]+"_"+params[:action] %>_body">
-    <div class="container-fluid">
-      <div class=<%=is_home_index%>>
-        <!-- hoem/indexの時だけ、ナビゲーションは、yieldの中に -->
-        <% if not is_home_index? %>
-          <%= render "/layouts/navigation" %>
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-              <%= yield %>
+    <div id="wrapper">
+      <div class="container-fluid">
+        <div class=<%=is_home_index%>>
+          <!-- hoem/indexの時だけ、ナビゲーションは、yieldの中に -->
+          <% if not is_home_index? %>
+            <%= render "/layouts/navigation" %>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <%= yield %>
+              </div>
             </div>
-          </div>
-          <%= render "/layouts/footer" %>
-        <% else %>
-          <%= yield %>
-          <%= render "/layouts/footer" %>
-        <% end %>
+            <%= render "/layouts/footer" %>
+          <% else %>
+            <%= yield %>
+            <%= render "/layouts/footer" %>
+          <% end %>
+        </div>
       </div>
     </div>
     <script>
