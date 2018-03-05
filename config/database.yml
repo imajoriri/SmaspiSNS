@@ -51,6 +51,7 @@ production:
   <<: *default
   database: smaspi_sns_production
   #username: smaspi_sns
-  username: root
-  #password: Inazuma12@
-  password: <%= ENV['SMASPI_SNS_DATABASE_PASSWORD'] %>
+  #username: root
+  username: <%= Rails.application.secrets.DB_USERNAME %>
+  #password: <%= ENV['SMASPI_SNS_DATABASE_PASSWORD'] %>
+  password: <%= Rails.application.secrets.DB_PASSWORD %>
