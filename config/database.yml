@@ -52,5 +52,5 @@ production:
   database: smaspi_sns_production
   #username: smaspi_sns
   username: root
-  password: Inazuma12@
-  #password: <%= ENV['SMASPI_SNS_DATABASE_PASSWORD'] %>
+  #password: Inazuma12@
+  password: <%= ENV['SMASPI_SNS_DATABASE_PASSWORD'] %>
