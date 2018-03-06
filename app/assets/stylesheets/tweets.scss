@@ -17,6 +17,13 @@
 //  background-color: #464646;
 //}
 //
+//index
+.tweets_index_body .navbar-default .navbar-toggle .icon-bar{
+  background-color: black;
+}
+
+
+
 ///////method
 .tweets_method_body{
   background-image: url("/image/Alexa.jpeg") !important;
@@ -76,4 +83,9 @@
 .conversation_right .direct-chat-text{
   margin: 20px 70px 10px 60px !important;
   background-color: white !important;
+}
+
+//会話の下のリンクを中央に
+.link_to_tweet{
+  text-align: center;
 }

@@ -13,5 +13,9 @@
 
     <%= render "conversation_right", name: @right_name, image_path: @right_image_path, conversation_content: "つぶやきました。投稿した内容は公式ホームページから見ることができます。" %>
 
+    <div class="link_to_tweet">
+    <%= link_to "つぶやきをのぞく >>", tweets_path, class: "btn btn-info" %>
+    </div>
+
 
 </div>
