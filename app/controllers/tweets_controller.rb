@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
 
   def index
-    @tweets = Tweet.includes(:smaspi).all
+    @tweets = Tweet.includes(:smaspi).order("created_at desc").all
   end 
 
   def new

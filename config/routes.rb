@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :admin_users
-  get 'home/index'
+  #get 'home/index'
+  root to: "home#index"
 
   resources :tweets, only: [:index, :new, :create]
   resources :tweets do

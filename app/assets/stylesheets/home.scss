@@ -19,7 +19,8 @@
 //home/indexでの背景画像
 body .home_index .home_image_area{
   /* 画像ファイルの指定 */
-  background-image: url("/image/IMG_0880.jpg");
+  //background-image: url("/image/IMG_0880.jpg");
+  background-image: url("/image/Alexa.jpeg") !important;
   /* 画像を常に天地左右の中央に配置 */
   background-position: center center;
   /* 画像をタイル状に繰り返し表示しない */
