@@ -4,6 +4,10 @@ class LambdaController < ApplicationController
     render json: ask_sample
   end 
 
+  def alexa
+    render json: ask_sample
+  end 
+
   def ask_sample
     output = { "version": "1.0",
                "sessionAttributes": { "testattr": "this is sample"},

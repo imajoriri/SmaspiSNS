@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :redirects, only: [:index] 
 
   resources :lambda, only: [:index]
+  post "lambda/alexa"
 
 
   resources :smaspis, only: [:index, :new, :create]
