@@ -67,3 +67,9 @@ group :development do
  gem 'capistrano-nginx'
 # gem 'capistrano-sidekiq'
 end
+
+
+gem 'devise'
+gem 'doorkeeper'
+gem 'omniauth'
+gem 'oauth2'

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  use_doorkeeper
+  devise_for :test_users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :admin_users
   #get 'home/index'
