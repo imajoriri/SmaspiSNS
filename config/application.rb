@@ -32,5 +32,6 @@ module SmaspiSns
     #config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
     config.read_encrypted_secrets = true
 
+    config.action_controller.forgery_protection_origin_check = false
   end
 end
