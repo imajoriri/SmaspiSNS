@@ -44,11 +44,7 @@ Doorkeeper.configure do
   # Rationale: https://github.com/doorkeeper-gem/doorkeeper/issues/383
   # reuse_access_token
 
-  # Issue access tokens with refresh token (disabled by default)
-  # use_refresh_token
-
-  # Provide support for an owner to be assigned to each registered application (disabled by default)
-  # Optional parameter confirmation: true (default false) if you want to enforce ownership of
+  # Issue access tokens with refresh token (disabled by default) # use_refresh_token # Provide support for an owner to be assigned to each registered application (disabled by default) # Optional parameter confirmation: true (default false) if you want to enforce ownership of
   # a registered application
   # Note: you must also run the rails g doorkeeper:application_owner generator to provide the necessary support
   # enable_application_owner confirmation: false

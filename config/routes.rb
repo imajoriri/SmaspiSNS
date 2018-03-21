@@ -13,6 +13,12 @@ Rails.application.routes.draw do
     end
   end 
 
+  namespace :api do
+    namespace :v1 do
+      get '/me' => 'test_users#me'
+    end
+  end
+
   resources :redirects, only: [:index] 
 
   resources :lambda, only: [:index]
